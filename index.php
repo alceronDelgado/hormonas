@@ -10,5 +10,12 @@
   <div class="header">
     <h1>Hormonas</h1>
   </div>
+
+  <div class="container">
+    <form action="resultado.php" method="post">
+      <input type="text" name="" id="">
+      <button></button>
+    </form>
+  </div>
 </body>
 </html>
