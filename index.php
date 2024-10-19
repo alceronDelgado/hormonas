@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hormonas</title>
@@ -28,7 +28,7 @@
       <img src="assets/img/viva1a.png" alt="" id="logotipo" class="" width="100%" height="">
     </div>
     <div class="title">
-      <h1 id="textTitle">IPS VIVA1A</h1>
+      <h1 id="textTitle">SALUD</h1>
     </div>
   </header>
 
@@ -52,7 +52,7 @@
             <input type="number" name="hormonas" id="" placeholder="Nivel Hormonas: " min="0" max="100" class="item form-control">
           </div>
           <div class="grupo3">
-            <button id="btn" class="btn btn-outline-info">hello</button>
+            <button id="btn" class="btn btn-outline-info">Consultar</button>
           </div>
         </form>
       </div>
