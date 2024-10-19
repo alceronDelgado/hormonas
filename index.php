@@ -12,9 +12,20 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
+  <nav class="navList">
+    <ul class="itemList">
+      <li><a href="">Agenda tu cita</a></li>
+      <li>|</li>
+      <li><a href="">Laboratorio</a></li>
+      <li>|</li>
+      <li><a href="">Resultados</a></li>
+      <li>|</li>
+      <li><a href="">Contacto</a></li>
+    </ul>
+  </nav>
   <header class="header">
     <div class="logo">
-      <img src="assets/img/viva1a.png" alt="" id="logotipo" class="" width="100%" height="80px">
+      <img src="assets/img/viva1a.png" alt="" id="logotipo" class="" width="100%" height="">
     </div>
     <div class="title">
       <h1 id="textTitle">IPS VIVA1A</h1>
@@ -24,7 +35,7 @@
   <div class="container">
     <div class="items">
       <div class="img">
-        <img src="assets/img/pregnant.png" alt="" id="pregnant">
+        <img src="assets/img/pregnatEdit.svg" alt="" id="pregnant">
       </div>
       <div class="form ">
         <form action="hormonas.php" method="post" class="form1">
