@@ -57,7 +57,6 @@
         </form>
         <hr>
         <div class="result">
-
           <?php
             if (isset($_SESSION['respuesta'])) {
               for ($i=0; $i < count($_SESSION['respuesta']); $i++) { ?>
