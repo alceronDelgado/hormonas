@@ -44,27 +44,43 @@
       <div class="img">
         <img src="assets/img/pregnatEdit.svg" alt="" id="pregnant">
       </div>
-      <div class="form">
-        <form action="hormonas.php" method="post" class="form1">
-          <div class="grupo1">
-            <input type="text" name="nombrePaciente" id="" placeholder="Nombre Paciente: " class="item form-control">
-            <select name="identificador" id="" class="item form-select">
-              <option value="---" selected>--</option>
-              <option value="CC">CC</option>
-              <option value="TI">TI</option>
-            </select>
-          </div>
-          <div class="grupo2">
-            <input type="number" name="edad" id="" placeholder="Edad paciente: " min="0" max="100" class="item form-control">
-            <input type="number" name="hormonas" id="" placeholder="Nivel Hormonas: " min="0" max="100" class="item form-control">
-          </div>
-          <div class="grupo3">
-            <button id="btn" class="btn btn-outline-info">Consultar</button>
-          </div>
-        </form>
-        <hr>
+      <div class="element">
+        <div class="info">
+          <span class="h3 center text-center">Digite su nivel de hormona y determina si está embarazada</span>
+        </div>
+        <div class="form">
+          <form action="hormonas.php" method="post" class="form1">
+            <div class="grupo1">
+              <div class="form-group item">
+                <label for="">Nombre paciente: </label>
+                <input type="text" name="nombrePaciente" id="" placeholder="" class="item form-control">
+              </div>
+              <div class="form-group item">
+                <label for="">Tipo de documento:</label>
+                  <select name="identificador" id="" class="item form-select">
+                    <option value="---" selected>--</option>
+                    <option value="CC">CC</option>
+                    <option value="TI">TI</option>
+                </select>
+              </div>
+            </div>
+            <div class="grupo2">
+              <div class="from-group item">
+                <label for="">Edad paciente:</label>
+                <input type="number" name="edad" id="" placeholder="" min="0" max="100" class="item form-control" required>
+              </div>
+              <div class="form-group item">
+                <label for="">Nivel Hormonas:</label>
+                <input type="number" name="hormonas" id="" placeholder="" min="0" max="100" class="item form-control" required>
+              </div>
+            </div>
+            <div class="grupo3">
+              <button id="btn" class="btn btn-outline-info">Consultar</button>
+            </div>
+          </form>
+          <hr>
+        </div>
         <div class="result">
-
           <?php
             if (isset($_SESSION['respuesta'])) {
               for ($i=0; $i < count($_SESSION['respuesta']); $i++) { ?>
@@ -76,10 +92,8 @@
               echo "";
             }
           ?>
-
+        </div>
       </div>
-      </div>
-
     </div>
   </div>
 

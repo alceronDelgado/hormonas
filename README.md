@@ -6,8 +6,8 @@ calcular el nivel hormonal de una paciente para determinar si se encuentra embar
 ## TODO:
 
 - [x] Cambiar título por menu
-- [] Arreglar formulario:
-  [] colocar form-group y labels a cada input
-- [] Colocar resultado del formulario debajo del boton de consultar resultado
-  [] Colocar titulo arriba del formulario que diga "consulte si se encuentra embarazada"
+- [x] Arreglar formulario:
+  [x] colocar form-group y labels a cada input
+- [x] Colocar resultado del formulario debajo del boton de consultar resultado
+  [x] Colocar titulo arriba del formulario que diga "consulte si se encuentra embarazada"
 - [] implementar footer
