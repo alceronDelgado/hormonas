@@ -27,8 +27,15 @@
     <div class="logo">
       <img src="assets/img/viva1a.png" alt="" id="logotipo" class="" width="100%" height="">
     </div>
-    <div class="title">
-      <h1 id="textTitle">SALUD</h1>
+    <div class="menutitle">
+      <!-- <h1 >SALUD</h1> -->
+      <ul class="menuHeader" id="textTitle">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Programas</a></li>
+        <li><a href="#">Pqrs</a></li>
+      </ul>
     </div>
   </header>
 

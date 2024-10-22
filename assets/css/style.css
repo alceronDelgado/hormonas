@@ -23,6 +23,7 @@ nav {
     align-items: center;
     gap: 8px;
     flex-direction: row;
+    font-family: monospace;
 
     li {
       font-size: 2vh;
@@ -47,12 +48,14 @@ nav {
 .header {
   display: flex;
   width: 50%;
-  height: 5vh;
+  height: 100%;
+  align-items: center;
   margin: 0 auto;
-  background-color: white;
-  box-shadow: 12px 12px 55px 1px #04ace0;
+
+  box-shadow: 12px 12px 25px 1px #04ace0;
   border-radius: 15px;
-  margin-top: 12px;
+  position: relative;
+  top: 12px;
 
   .logo {
     width: 20%;
@@ -65,21 +68,49 @@ nav {
     padding: 3px;
   }
 
-  .title {
-    width: 100%;
+  .menutitle {
+    width: 80%;
+    height: auto;
     display: flex;
-    justify-content: center;
-    font-family: 'Poppins';
-  }
-
-  #textTitle {
-    font-size: 5vh;
-    font-family: 'Courier New', Courier, monospace;
-    text-transform: capitalize;
-    display: flex;
-    justify-content: space-around;
+    justify-items: center;
     align-items: center;
+
+    
+    #textTitle {
+      display: flex;
+      justify-content: space-evenly;
+      list-style: none;
+      height: inherit;
+      font-family: 'Poppins', monospace;
+      text-transform: capitalize;
+      /* agregamos transición para aplicarla al hoover */
+      background-color: white;
+      
+      
+      /* etiqueta a del header */
+      a{
+        transition: 0.4s;
+        font-size: 2.1vh;
+        text-decoration: none;
+        color: black;
+      }
+
+
+      /* Efecto hoover */
+      li a:hover{
+        background-color: #04ace0;
+        color: #fff;
+        padding: 12px 3px;
+      }
+    }
+
+    .menuHeader{
+      width: 100%;
+
+    }
   }
+  
+  
 }
 
 .container {
