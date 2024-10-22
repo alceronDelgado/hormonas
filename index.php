@@ -37,7 +37,7 @@
       <div class="img">
         <img src="assets/img/pregnatEdit.svg" alt="" id="pregnant">
       </div>
-      <div class="form ">
+      <div class="form">
         <form action="hormonas.php" method="post" class="form1">
           <div class="grupo1">
             <input type="text" name="nombrePaciente" id="" placeholder="Nombre Paciente: " class="item form-control">
@@ -55,23 +55,26 @@
             <button id="btn" class="btn btn-outline-info">Consultar</button>
           </div>
         </form>
+        <hr>
+        <div class="result">
+
+          <?php
+            if (isset($_SESSION['respuesta'])) {
+              for ($i=0; $i < count($_SESSION['respuesta']); $i++) { ?>
+              <?php echo $_SESSION['respuesta'][$i].'<br>';?>
+            <?php
+              }
+              session_destroy();
+            }else{
+              echo "";
+            }
+          ?>
+
       </div>
+      </div>
+
     </div>
-
-
   </div>
 
-  <div class="result">
-    <?php
-    if (isset($_SESSION['respuesta'])) {
-      for ($i=0; $i < count($_SESSION['respuesta']); $i++) {
-        echo $_SESSION['respuesta'][$i]."\n";
-      }
-      session_destroy();
-    }else{
-      echo "";
-    }
-    ?>
-  </div>
 </body>
 </html>

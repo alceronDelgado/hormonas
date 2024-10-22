@@ -4,7 +4,7 @@ session_start();
   $nombrePaciente = $_POST['nombrePaciente'];
   $identificador = $_POST['identificador'];
   $edad = $_POST['edad'];
-  $hormonas = $_POST['hormonas'];
+  $nivelHormonas = $_POST['hormonas'];
   $resultado = "";
 
   if  (
