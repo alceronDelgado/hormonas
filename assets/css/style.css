@@ -51,7 +51,6 @@ nav {
   height: 100%;
   align-items: center;
   margin: 0 auto;
-
   box-shadow: 12px 12px 25px 1px #04ace0;
   border-radius: 15px;
   position: relative;
@@ -113,104 +112,103 @@ nav {
   
 }
 
-.container {
+.content {
   width: 60%;
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
   position: relative;
   top: 50px;
-  border: 1px solid black;
   border-radius: 30px;
-
+  
   .items {
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 50%;
+    height: 430px;
     gap: 10px;
     position: relative;
-  }
-
-  .element{
-    width: 100%;
-
-    .info{
-      display: flex;
-      flex-direction: initial;
+    .element{
       width: 100%;
-      font-family: monospace;
-      justify-content: center;
-      text-transform: capitalize;
-    }
-
-    .form {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      padding: 15px;
   
-      .form1 {
+      .info{
+        display: flex;
+        flex-direction: initial;
+        width: 100%;
+        font-family: monospace;
+        justify-content: center;
+        text-transform: capitalize;
+      }
+  
+      .form {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        width: 100%;
-        gap: 8px;
-  
-  
-        /* input class */
-        .item {
+        position: relative;
+        gap: 3px;
+    
+        .form1 {
+          display: flex;
+          flex-direction: column;
           width: 100%;
-        }
-  
-        .grupo1 {
-          display: flex;
-          flex-direction: row;
-          gap: 40px;
-          width: 100%;
-        }
-  
-        .grupo2 {
-          display: flex;
-          flex-direction: row;
-          gap: 40px;
-        }
-  
-        .grupo3 {
-          display: flex;
-          flex-direction: row;
-          height: auto;
-          justify-content: center;
-  
-          #btn {
-            width: 30%;
-            height: 50px;
+          gap: 20px;
+
+          /* input class */
+          .item {
+            width: 100%;
+          }
+    
+          .grupo1 {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            width: 100%;
+          }
+    
+          .grupo2 {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+          }
+    
+          .grupo3 {
+            display: flex;
+            flex-direction: row;
+            height: auto;
+            justify-content: center;
+    
+            #btn {
+              width: 30%;
+              height: 50px;
+            }
           }
         }
-  
-  
       }
     }
-  
   }
-
-  
-
-  
 
   .img {
     object-fit: cover;
     width: 100%;
 
-
     #pregnant {
       width: 100%;
-      height: 50%;
+      height: 100%;
     }
   }
 
   .result {
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    height: calc(100vh - 820px);
+    margin-top: 30px;
+    
+    .hello{
+      /* Le coloque inherit para que herede el tamaño del contendor */
+      font-size: inherit;
+      text-transform: capitalize;
+    }
   }
 }

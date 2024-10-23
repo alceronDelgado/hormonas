@@ -39,7 +39,7 @@
     </div>
   </header>
 
-  <div class="container">
+  <div class="container-fluid content">
     <div class="items">
       <div class="img">
         <img src="assets/img/pregnatEdit.svg" alt="" id="pregnant">
@@ -78,21 +78,21 @@
               <button id="btn" class="btn btn-outline-info">Consultar</button>
             </div>
           </form>
-          <hr>
         </div>
         <div class="result">
           <?php
             if (isset($_SESSION['respuesta'])) {
-              for ($i=0; $i < count($_SESSION['respuesta']); $i++) { ?>
-              <?php echo $_SESSION['respuesta'][$i].'<br>';?>
-            <?php
-              }
-              session_destroy();
+              foreach ($_SESSION['respuesta'] as $key => $value) { ?>
+                <span class="hello"><?php echo $key.": ".$value; ?></span>
+          <?php 
+            }
+            session_destroy();
             }else{
-              echo "";
+            echo "";
             }
           ?>
         </div>
+        
       </div>
     </div>
   </div>

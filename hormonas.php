@@ -21,7 +21,13 @@ session_start();
   }
 
   //creamos array y le guardamos unos valores
-  $items = array($nombrePaciente,$identificador,$edad,$nivelHormonas,$resultado);
+  //$items = array($nombrePaciente,$identificador,$edad,$nivelHormonas,$resultado);
+  $items = array(
+  "nombrePaciente" => $nombrePaciente,
+  "tipoDocumento"=>$identificador,
+  "edad" =>$edad,
+  "Hormonas" => $nivelHormonas,
+  "Resultado" =>$resultado);
 
   if (empty($_SESSION['respuesta'])) {
     //creamos variable de session y le decimos que va a tener el array
