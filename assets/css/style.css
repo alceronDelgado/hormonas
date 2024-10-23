@@ -4,13 +4,6 @@
   box-sizing: border-box;
 }
 
-/* body {
-  background: rgba(rgb(199, 65, 65), rgb(129, 155, 129), rgb(29, 29, 90), .5);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-} */
-
 nav {
   display: flex;
 
@@ -74,7 +67,6 @@ nav {
     justify-items: center;
     align-items: center;
 
-    
     #textTitle {
       display: flex;
       justify-content: space-evenly;
@@ -85,7 +77,6 @@ nav {
       /* agregamos transición para aplicarla al hoover */
       background-color: white;
       
-      
       /* etiqueta a del header */
       a{
         transition: 0.4s;
@@ -93,7 +84,6 @@ nav {
         text-decoration: none;
         color: black;
       }
-
 
       /* Efecto hoover */
       li a:hover{
@@ -108,7 +98,6 @@ nav {
 
     }
   }
-  
   
 }
 
@@ -211,4 +200,17 @@ nav {
       text-transform: capitalize;
     }
   }
+
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #04ace0;
+  color: white;
+  font-size: 2.5vh;
+  text-align: center;
+  height: auto;
+  text-transform: capitalize;
 }
