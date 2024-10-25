@@ -61,7 +61,7 @@ nav {
   }
 
   .menutitle {
-    width: 80%;
+    width: 100%;
     height: auto;
     display: flex;
     justify-items: center;
@@ -71,6 +71,7 @@ nav {
       display: flex;
       justify-content: space-evenly;
       list-style: none;
+      text-decoration: none;
       height: inherit;
       font-family: 'Poppins', monospace;
       text-transform: capitalize;
@@ -80,9 +81,10 @@ nav {
       /* etiqueta a del header */
       a{
         transition: 0.4s;
-        font-size: 2.1vh;
+        font-size: 2vw;
         text-decoration: none;
         color: black;
+        height: 100%;
       }
 
       /* Efecto hoover */
@@ -102,7 +104,7 @@ nav {
 }
 
 .content {
-  width: 60%;
+  width: 60;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -116,7 +118,7 @@ nav {
     justify-content: space-between;
     width: 50%;
     height: 430px;
-    gap: 10px;
+    gap: 0px 10px;
     position: relative;
     .element{
       width: 100%;
@@ -213,4 +215,86 @@ footer {
   text-align: center;
   height: auto;
   text-transform: capitalize;
+}
+
+/* mobile responsive */
+@media only screen and (max-width: 767px) {
+  .navList{
+    /* ocultamos el menú de arriba */
+    display: none;
+  }
+
+  header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content{
+    margin: 0 auto;
+    
+    .items{
+      /* hago que el container en donde está la imagen y el formulario sea un poco más grande */
+      height: calc(100vh - 400px);
+      width: 100%;
+      .element{
+        .info{
+
+          display: flex;
+          width: 100%;
+
+          .h3{
+
+            font-size: inherit;
+          }
+        }
+
+        .form{
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+
+          .item{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+          }
+
+          .form1{
+
+            .grupo1{
+              display: flex;
+              flex-direction: column;
+              gap: 22px;
+            }
+
+            .grupo3{
+              width: 100%;
+              height: 2rem;
+              #btn{
+                width: inherit;
+                height: inherit;
+              }
+            }
+            
+          }
+        }
+
+        .result{
+          width: calc(100vh - 500px);
+          height: calc(100vh - 850px);
+        }
+      }
+    }
+  }
+}
+
+/* Table responsive */
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+  .content{
+    .items{
+      width: 100%;
+    }
+  }
 }

@@ -12,7 +12,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav class="navList">
+  <nav class="navList container container-fluid">
     <ul class="itemList">
       <li><a href="">Agenda tu cita</a></li>
       <li>|</li>
@@ -23,11 +23,11 @@
       <li><a href="">Contacto</a></li>
     </ul>
   </nav>
-  <header class="header">
+  <header class="header container container-fluid">
     <div class="logo">
       <img src="assets/img/viva1a.png" alt="" id="logotipo" class="" width="100%" height="">
     </div>
-    <div class="menutitle">
+    <div class="menutitle ">
       <!-- <h1 >SALUD</h1> -->
       <ul class="menuHeader" id="textTitle">
         <li><a href="#">Inicio</a></li>
@@ -97,7 +97,7 @@
     </div>
   </div>
 
-  <footer class="">
+  <footer class="container-fluid">
     viva ia ips - 2024
   </footer>
 
