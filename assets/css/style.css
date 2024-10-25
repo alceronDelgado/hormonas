@@ -236,8 +236,13 @@ footer {
     .items{
       /* hago que el container en donde está la imagen y el formulario sea un poco más grande */
       height: calc(100vh - 400px);
+
+      .img{
+        width: 50%;
+      }
       width: 100%;
       .element{
+        width: 50%;
         .info{
 
           display: flex;
