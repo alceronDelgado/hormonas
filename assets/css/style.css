@@ -77,9 +77,9 @@ nav {
       text-transform: capitalize;
       /* agregamos transición para aplicarla al hoover */
       background-color: white;
-      
+
       /* etiqueta a del header */
-      a{
+      a {
         transition: 0.4s;
         font-size: 2vw;
         text-decoration: none;
@@ -88,19 +88,19 @@ nav {
       }
 
       /* Efecto hoover */
-      li a:hover{
+      li a:hover {
         background-color: #04ace0;
         color: #fff;
         padding: 12px 3px;
       }
     }
 
-    .menuHeader{
+    .menuHeader {
       width: 100%;
 
     }
   }
-  
+
 }
 
 .content {
@@ -110,8 +110,9 @@ nav {
   position: relative;
   top: 50px;
   border-radius: 30px;
-  
+
   .items {
+
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -120,10 +121,22 @@ nav {
     height: 430px;
     gap: 0px 10px;
     position: relative;
-    .element{
+
+    .img {
+      object-fit: cover;
       width: 100%;
-  
-      .info{
+      max-width: 100%;
+
+      #pregnant {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .element {
+      width: 100%;
+
+      .info {
         display: flex;
         flex-direction: initial;
         width: 100%;
@@ -131,14 +144,14 @@ nav {
         justify-content: center;
         text-transform: capitalize;
       }
-  
+
       .form {
         width: 100%;
         display: flex;
         flex-direction: column;
         position: relative;
         gap: 3px;
-    
+
         .form1 {
           display: flex;
           flex-direction: column;
@@ -149,26 +162,26 @@ nav {
           .item {
             width: 100%;
           }
-    
+
           .grupo1 {
             display: flex;
             flex-direction: row;
             gap: 40px;
             width: 100%;
           }
-    
+
           .grupo2 {
             display: flex;
             flex-direction: row;
             gap: 40px;
           }
-    
+
           .grupo3 {
             display: flex;
             flex-direction: row;
             height: auto;
             justify-content: center;
-    
+
             #btn {
               width: 30%;
               height: 50px;
@@ -177,17 +190,10 @@ nav {
         }
       }
     }
+
   }
 
-  .img {
-    object-fit: cover;
-    width: 100%;
 
-    #pregnant {
-      width: 100%;
-      height: 100%;
-    }
-  }
 
   .result {
     width: 100%;
@@ -195,8 +201,8 @@ nav {
     flex-direction: column;
     height: calc(100vh - 820px);
     margin-top: 30px;
-    
-    .hello{
+
+    .hello {
       /* Le coloque inherit para que herede el tamaño del contendor */
       font-size: inherit;
       text-transform: capitalize;
@@ -219,74 +225,77 @@ footer {
 
 /* mobile responsive */
 @media only screen and (max-width: 767px) {
-  .navList{
+  .navList {
     /* ocultamos el menú de arriba */
     display: none;
   }
 
-  header{
+  header {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
 
-  .content{
+  .content {
     margin: 0 auto;
-    
-    .items{
+    width: 100%;
+
+    .items {
       /* hago que el container en donde está la imagen y el formulario sea un poco más grande */
       height: calc(100vh - 400px);
 
-      .img{
-        width: 50%;
+      .img {
+        width: 100%;
       }
-      width: 100%;
-      .element{
+
+      .element {
         width: 50%;
-        .info{
+
+        .info {
 
           display: flex;
           width: 100%;
 
-          .h3{
+          .h3 {
 
             font-size: inherit;
           }
         }
 
-        .form{
+        .form {
           display: flex;
           width: 100%;
           flex-direction: column;
 
-          .item{
+          .item {
             width: 100%;
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
           }
 
-          .form1{
+          .form1 {
 
-            .grupo1{
+            .grupo1 {
               display: flex;
               flex-direction: column;
               gap: 22px;
             }
 
-            .grupo3{
+            .grupo3 {
               width: 100%;
               height: 2rem;
-              #btn{
+
+              #btn {
                 width: inherit;
                 height: inherit;
               }
             }
-            
+
           }
         }
 
-        .result{
+        .result {
           width: calc(100vh - 500px);
           height: calc(100vh - 850px);
         }
@@ -297,8 +306,8 @@ footer {
 
 /* Table responsive */
 @media only screen and (min-width: 768px) and (max-width:1024px) {
-  .content{
-    .items{
+  .content {
+    .items {
       width: 100%;
     }
   }
