@@ -58,7 +58,7 @@
               <div class="form-group item">
                 <label for="">Tipo de documento:</label>
                   <select name="identificador" id="" class="item form-select">
-                    <option value="---" selected>--</option>
+                    <option value="" selected>--</option>
                     <option value="CC">CC</option>
                     <option value="TI">TI</option>
                 </select>
@@ -84,7 +84,7 @@
             if (isset($_SESSION['respuesta'])) {
               foreach ($_SESSION['respuesta'] as $key => $value) { ?>
                 <span class="hello"><?php echo $key.": ".$value; ?></span>
-          <?php 
+          <?php
             }
             session_destroy();
             }else{
@@ -92,7 +92,7 @@
             }
           ?>
         </div>
-        
+
       </div>
     </div>
   </div>
